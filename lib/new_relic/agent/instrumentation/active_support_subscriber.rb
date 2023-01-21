@@ -39,7 +39,6 @@ module NewRelic
         end
 
         PATTERN = /\Acache_([^\.]*)\.active_support\z/
-        UNKNOWN = "unknown".freeze
 
         METHOD_NAME_MAPPING = Hash.new do |h, k|
           if PATTERN =~ k
